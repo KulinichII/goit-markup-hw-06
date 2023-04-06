@@ -54,25 +54,25 @@ integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8
                 </button>
                 <p class="modal-title">Leave your contacts and we will call you back</p>
                 <form class="modal-form">
-                    <label class="modal-label">Name</label>
+                    <label for="user-name" class="modal-label">Name</label>
                     <div class="modal-input-wrap">
-                         <input type="text" class="modal-input" name="user name" required minlength="3">
+                         <input type="text" class="modal-input" id="user-name" name="Name" required minlength="3">
                     <svg class="modal-input-icon">
                         <use href="./images/icons.svg#icon-person"></use>
                     </svg>
                     </div>
                    
-                    <label class="modal-label">Phone</label>
+                    <label for="user-phone" class="modal-label">Phone</label>
                     <div class="modal-input-wrap">
-                     <input type="tel" class="modal-input" name="user phone" required maxlength="10">
+                     <input type="tel" class="modal-input" id="user-phone" name="user phone" required maxlength="10">
                      <svg class="modal-input-icon">
                         <use href="./images/icons.svg#icon-phone"></use>
                     </svg>
                     </div>
                     
-                    <label class="modal-label">Email</label>
+                    <label for="user-ameil" class="modal-label">Email</label>
                     <div class="modal-input-wrap">
-                        <input type="email" class="modal-input" name="user email" required >
+                        <input type="email" class="modal-input" id="user-ameil" name="user email" required >
                         <svg class="modal-input-icon">
                             <use href="./images/icons.svg#icon-email"></use>
                         </svg>
@@ -83,10 +83,14 @@ integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8
                     <textarea name="Comment" id="Comment" placeholder="Text input" class="modal-input-text"></textarea>
 
                     <div class="modal-radio-div">
-                       <input class="modal-radio" type="checkbox">
-                    <p class="modal-radio-par">I accept the terms and conditions of the <span class="modal-radio-span">
+                       <input class="modal-radio visually-hidden" id="privacy" type="checkbox">
+                    <label for="privacy"  class="modal-radio-par"><span>
+                        <svg class="modal-radio-icon">
+                            <use href="./images/icons.svg#icon-Vector"></use>
+                        </svg> 
+                    </span>  I accept the terms and conditions of the 
                         <a class="modal-radio-link link" href="">Privacy Policy</a>
-                    </span></p>
+                    </label> 
                     </div>
                    
 
@@ -465,10 +469,8 @@ integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8
         <div class="footer-dno-email">
             <p class="footer-dno-label">Subscribe</p>
                     <div class="footer-input-wrap">
+                        <form class="footer-dno-btn"></form>
                         <input type="email" class="footer-modal-input" name="user email" required placeholder="E-mail" >
-                    </div>
-        </div>
-        <div class="footer-dno-btn">
             <button type="button" class="footer-btn">Subscribe <svg class="footer-btn-icon">
                 <use href="./images/icons.svg#icon-Frame"></use>
             </svg></button>
