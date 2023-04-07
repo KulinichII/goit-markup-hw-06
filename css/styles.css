@@ -838,7 +838,7 @@ padding: 8px 16px;
 display: flex;
 align-items: center;
 letter-spacing: 0.04em;
-
+outline: none;
 color: rgba(255, 255, 255, 0.6);
 
 }
@@ -878,6 +878,14 @@ padding-left: 24px;
 border: none;
 margin-left: 24px;
 cursor: pointer;
+transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-btn:hover,
+.footer-btn:focus {
+    background: #404BBF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 .footer-btn-icon {
