@@ -335,6 +335,13 @@ fill: transparent;
 
 }
 
+
+.modal-input-text:focus {
+    border: 1px solid #4D5AE5;
+    border-radius: 4px;
+}
+
+
 .modal-span {
     width: 16px;
     height: 16px;
