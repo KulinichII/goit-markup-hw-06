@@ -301,8 +301,9 @@ font-size: 12px;
 line-height: 1.6;
 letter-spacing: 0.04em;
 color: #757575;
-margin-left: 8px;
 display: flex;
+align-items: center;
+justify-content: center;
 gap: 8px;
 }
 
@@ -324,7 +325,7 @@ border-radius: 2px;
 .modal-radio:checked + .modal-radio-par .modal-span{
     background: #404BBF;
     border: none;
-    fill: #F4F4FD;
+    fill: #FCFCFC;
 
 }
 
@@ -355,7 +356,7 @@ fill: transparent;
 .modal-radio-icon {
     width: 10px;
     height: 8px;
-    fill: #F4F4FD;
+    fill: #FCFCFC;
 } 
 
 .visually-hidden {
@@ -377,7 +378,6 @@ fill: transparent;
 font-size: 12px;
 line-height: 16px;
 letter-spacing: 0.04em;
-text-decoration-line: underline;
 color: #4D5AE5;
 }
 
